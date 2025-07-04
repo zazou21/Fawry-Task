@@ -26,6 +26,7 @@ public void printReceipt(double shippingFee) {
     System.out.printf("Subtotal\t%.0f%n", subtotal);
     System.out.printf("Shipping\t%.0f%n", shippingFee);
     System.out.printf("Amount\t\t%.0f%n", total);
+    System.out.println("-----------------------");
 }
 
 
@@ -87,6 +88,7 @@ public void printReceipt(double shippingFee) {
     public void process(String area, ShippingService shippingService) {
         if (cart == null || cart.getCartItems().isEmpty()) {
             System.out.println("Error: Cart is empty.");
+            System.out.println("-----------------");
             return;
         }
 
