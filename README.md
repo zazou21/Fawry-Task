@@ -1,6 +1,7 @@
-## Getting Started
+## Applicant Name : Ezz Eldin Alaa Eldin Omar Shalaby
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Description 
+This is the ecommerce Java Application required for Fawri Quantum Internship Task
 
 ## Folder Structure
 
@@ -9,10 +10,52 @@ The workspace contains two folders by default, where:
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Functionalities
+###  Product Management
+- Supports different product types:
+  - Regular Products
+  - Shippable Products
+  - Expirable Products
+  - Products that are both Shippable and Expirable
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+###  Customer Management
+- Create customers with name, email, phone, and balance
+- Validates email formats upon customer creation
 
-## Dependency Management
+###  Shopping Cart
+- Add products to the cart with specified quantities
+- Automatically checks product stock availability during addition
+- Calculates the total price of items in the cart
+- Supports clearing the cart
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### ✅ Checkout Process
+- Validates product availability and expiration dates before checkout
+- Calculates:
+  - Subtotal
+  - Shipping fees based on predefined delivery areas
+  - Total amount
+- Checks if the customer has sufficient balance before proceeding
+- Deducts product quantities and customer balance after successful checkout
+- Generates a detailed checkout receipt
+
+### Shipping Service
+- Ships shippable products and displays a shipment notice with item names and weights
+- Calculates the total package weight
+
+###  Order Management
+- Creates and stores customer orders after successful checkout
+- Tracks order status:
+  - Pending
+  - Processing
+  - Shipped
+  - Delivered
+  - Cancelled
+
+###  Test Cases in Main App
+- Demonstrates various scenarios including:
+  - Normal checkout with mixed products
+  - Expired product prevention
+  - Insufficient balance handling
+  - Invalid shipping area handling
+  - Stock depletion handling
+
