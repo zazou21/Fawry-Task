@@ -28,7 +28,7 @@ The workspace contains two folders by default, where:
 - Calculates the total price of items in the cart
 - Supports clearing the cart
 
-### ✅ Checkout Process
+###  Checkout Process
 - Validates product availability and expiration dates before checkout
 - Calculates:
   - Subtotal
